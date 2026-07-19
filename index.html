@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anwar Kitab — Islamic books, kufis, hijabs, gifts, and learning resources." />
+  <title>Anwar Kitab | Islamic Bookstore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="announcement">Free local pickup available • New products added regularly</div>
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Anwar Kitab home">
+        <span class="brand-mark">AK</span>
+        <span>
+          <strong>Anwar Kitab</strong>
+          <small>Islamic Bookstore</small>
+        </span>
+      </a>
+
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="cart-button" id="openCart">Cart <span id="cartCount">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Books that bring light into the home</p>
+          <h1>Grow in knowledge, faith, and character.</h1>
+          <p>
+            Shop thoughtfully selected Islamic books, children’s resources,
+            kufis, hijabs, prayer essentials, and meaningful gifts.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#shop">Shop Collection</a>
+            <a class="button button-secondary" href="#about">Our Story</a>
+          </div>
+          <div class="hero-notes">
+            <span>✓ Family-friendly</span>
+            <span>✓ Carefully selected</span>
+            <span>✓ Secure order request</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="arch">
+            <div class="moon">☾</div>
+            <p>ANWAR</p>
+            <h2>KITAB</h2>
+            <span>نور الكتاب</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <a href="#shop" data-filter-link="Books"><span>📚</span><strong>Books</strong><small>Knowledge for every age</small></a>
+      <a href="#shop" data-filter-link="Children"><span>🌙</span><strong>Children</strong><small>Faith-filled learning</small></a>
+      <a href="#shop" data-filter-link="Hijabs"><span>🧕🏽</span><strong>Hijabs</strong><small>Beautiful everyday styles</small></a>
+      <a href="#shop" data-filter-link="Kufis"><span>🕌</span><strong>Kufis</strong><small>Classic and comfortable</small></a>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured collection</p>
+            <h2>Shop Anwar Kitab</h2>
+          </div>
+          <p>Use these sample products now, then replace them with your own names, prices, and photos.</p>
+        </div>
+
+        <div class="filters" aria-label="Product filters">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Books">Books</button>
+          <button class="filter" data-filter="Children">Children</button>
+          <button class="filter" data-filter="Hijabs">Hijabs</button>
+          <button class="filter" data-filter="Kufis">Kufis</button>
+          <button class="filter" data-filter="Gifts">Gifts</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="feature-banner">
+      <div class="container feature-grid">
+        <div>
+          <p class="eyebrow light">A beautiful gift of knowledge</p>
+          <h2>Build your family’s Islamic library one book at a time.</h2>
+        </div>
+        <a class="button button-gold" href="#contact">Ask About a Product</a>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="about-art">
+        <div class="book-stack">
+          <span>Qur’an & Tafsir</span>
+          <span>Marriage & Family</span>
+          <span>Children’s Learning</span>
+          <span>Islamic Character</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About Anwar Kitab</p>
+        <h2>Sharing beneficial knowledge with every home.</h2>
+        <p>
+          Anwar Kitab is an Islamic bookstore created to make beneficial books
+          and modest essentials easier for families to find. Our goal is to
+          offer products that support learning, worship, family life, and
+          personal growth.
+        </p>
+        <p>
+          “Anwar” means lights, and “Kitab” means book. Together, the name
+          reflects our hope that every item brings light and benefit to your home.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact & orders</p>
+          <h2>Have a question or want to place an order?</h2>
+          <p>
+            Complete the form and your email app will open with your order request.
+            Replace the sample email address in the website files with your real one.
+          </p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> orders@anwarkitab.com</p>
+            <p><strong>Instagram:</strong> @anwarkitab</p>
+            <p><strong>Hours:</strong> Monday–Saturday, 10 AM–6 PM</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" id="customerName" required placeholder="Your name" />
+          </label>
+          <label>
+            Email or phone
+            <input type="text" id="customerContact" required placeholder="How should we contact you?" />
+          </label>
+          <label>
+            Message
+            <textarea id="customerMessage" rows="5" required placeholder="Tell us what you would like to order"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Order Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" aria-label="Close cart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="button button-primary full" id="checkoutButton">Request This Order</button>
+      <small>This free website sends an order request. Connect Stripe, Square, or Shopify later for online payments.</small>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-mark">AK</span>
+          <span><strong>Anwar Kitab</strong><small>Islamic Bookstore</small></span>
+        </div>
+        <p>Beneficial books. Modest essentials. Meaningful gifts.</p>
+      </div>
+      <div>
+        <strong>Shop</strong>
+        <a href="#shop">Books</a>
+        <a href="#shop">Children</a>
+        <a href="#shop">Hijabs & Kufis</a>
+      </div>
+      <div>
+        <strong>Information</strong>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Order Help</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Anwar Kitab. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
